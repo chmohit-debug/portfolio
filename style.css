@@ -1,0 +1,289 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0f172a;
+  color: #fff;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+/* Glass Navbar */
+.glass {
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+}
+
+.highlight {
+  color: #38bdf8;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 0 30px #38bdf8;
+}
+
+/* Cards */
+.card {
+  padding: 20px;
+  border-radius: 15px;
+  background: #5b8ad6;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Skills */
+.skill-card {
+  text-align: center;
+}
+
+/* Projects */
+.project-card {
+  text-align: center;
+}
+
+/* Experience */
+
+.company {
+  font-weight: 600;
+  color: #38bdf8;
+}
+
+.duration {
+  background: #38bdf8;
+  color: #000;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Vertical Line */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background: #38bdf8;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+/* Timeline Item */
+.timeline-item {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+}
+
+/* Left Side */
+.timeline-item:nth-child(odd) {
+  left: 0;
+}
+
+/* Right Side */
+.timeline-item:nth-child(even) {
+  left: 50%;
+}
+
+/* Dot */
+.timeline-dot {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #38bdf8;
+  border-radius: 50%;
+  top: 25px;
+  right: -8px;
+  z-index: 1;
+}
+
+/* Right Side Dot Fix */
+.timeline-item:nth-child(even) .timeline-dot {
+  left: -8px;
+}
+
+/* Content Box */
+.timeline-content {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+
+  .timeline::after {
+    left: 20px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 25px;
+  }
+
+  .timeline-item:nth-child(even) {
+    left: 0;
+  }
+
+  .timeline-dot {
+    left: 12px;
+  }
+}
+
+/* Typing */
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* Contact Info Box */
+.contact-info {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+/* Contact Items */
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contact-item span {
+  font-size: 22px;
+  margin-right: 15px;
+}
+
+/* Form Box */
+.contact-form-box {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+/* Inputs */
+.contact-form-box input,
+.contact-form-box textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+/* Button */
+.contact-form-box button {
+  margin-top: 10px;
+}
+
+/* Hover Glow */
+.contact-info:hover,
+.contact-form-box:hover {
+  box-shadow: 0 0 20px #38bdf8;
+  transition: 0.3s;
+}
+
+/* Filter Buttons */
+.filter-btn {
+  margin: 5px;
+}
+
+/* Card Style */
+.project-card {
+  background: #4db4dd;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.4s;
+  position: relative;
+}
+
+/* Hover Glow */
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 0 25px #43d6a5;
+}
+
+/* Image */
+.project-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Buttons */
+.project-card .btn {
+  margin-right: 5px;
+}
+
+/* Footer */
+.footer {
+  background: #020617;
+  padding: 25px 0;
+  color: #cbd5f5;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Social Icons */
+.social-icon {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 18px;
+  color: #cbd5f5;
+  transition: 0.3s;
+}
+
+/* Hover Effect */
+.social-icon:hover {
+  color: #38bdf8;
+  transform: translateY(-3px);
+}
+
+/* Bottom Text */
+.footer-bottom p {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.skill-card {
+  padding: 25px;
+  border-radius: 15px;
+  background: #5ba5d6;
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #38bdf8;
+}
+
+/* ICON STYLE */
+.skill-icon {
+  font-size: 40px;
+  color: hwb(251 8% 38%);
+  margin-bottom: 15px;
+  display: inline-block;
+}
